@@ -12,24 +12,13 @@ app.listen(4000, () => {
 })
 
 const handleRegister = () => {
-	//Routes
 	app.post('/register', (request, response) => {
-	response.json({	result: 'Ey! You have successfully registered !! :D'})
+		response.json({	result: 'Ey! You have successfully registered !! :D'})
 	})
 }
 
-// const handleLogin = () => {
-
-
-// }
-
-//Routes
-app.post('/register', (request, response) => {
-	response.json({	result: 'Ey! You have successfully registered !! :D'})
-})
-
-// app.get('/login', (request, response) => {
-// 	response.json({
-// 		datos: 'Estas en la ruta correspondiente al: LOGIN'
-// 	})
-// })
+const handleLogin = () => {
+	app.put('/login', (request, response) => {
+		response.json({	result: 'Ey! You have Login!! <=D'})
+	})
+}
