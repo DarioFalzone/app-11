@@ -1,9 +1,6 @@
 const express = require('express');
 const app = express();
 
-// const bodyParser = require('body-parser');
-// app.use(bodyParser.json());
-
 const cors = require('cors');
 app.use(cors());
 
@@ -15,10 +12,16 @@ const handleRegister = () => {
 	app.post('/register', (request, response) => {
 		response.json({	result: 'Ey! You have successfully registered !! :D'})
 	})
+	return;
 }
 
+handleRegister();
+
 const handleLogin = () => {
-	app.put('/login', (request, response) => {
+	app.post('/login', (request, response) => {
 		response.json({	result: 'Ey! You have Login!! <=D'})
 	})
+	return;
 }
+
+handleLogin();
