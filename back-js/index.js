@@ -5,6 +5,16 @@ app.listen(4000, () => {
 	console.log('Aplicación corriendo exitosamente en el puerto 4000');
 })
 
+
+const handleRegister = () => {
+
+}
+
+const handleLogin = () => {
+
+}
+
+
 //Routes
 // app.get('/login', (request, response) => {
 // 	console.log(__filename);
