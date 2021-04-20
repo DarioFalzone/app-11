@@ -6,22 +6,24 @@ app.listen(4000, () => {
 })
 
 
-const handleRegister = () => {
+// const handleRegister = () => {
 
-}
+// }
 
-const handleLogin = () => {
+// const handleLogin = () => {
 
-}
 
+// }
 
 //Routes
-// app.get('/login', (request, response) => {
-// 	console.log(__filename);
-// 	response.sendFile(path.resolve(__filename, 'C:/Users/Dario%20Falzone/Desktop/RadiumRocket/problem-10/public/login.html'))
-// })
+app.get('/register', (request, response) => {
+	response.json({
+		datos: 'Estas en la ruta correspondiente al: REGISTRO'
+	})
+})
 
-// app.get('/register', (request, response) => {
-// 	console.log(__filename);
-// 	response.sendFile(path.resolve(__filename, '/c/Users/Dario Falzone/Desktop/RadiumRocket/problem-10/public/register.html'))
-// })
+app.get('/login', (request, response) => {
+	response.json({
+		datos: 'Estas en la ruta correspondiente al: LOGIN'
+	})
+})
